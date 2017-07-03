@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
             android:title="Home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
+            android:id="@+id/nav_events"
+            android:icon="@drawable/events_icon"
             android:title="Events" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:id="@+id/nav_ping"
+            android:icon="@drawable/newsletter_icon"
             android:title="P.I.N.G." />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
+            android:id="@+id/nav_map"
+            android:icon="@drawable/directions_icon"
             android:title="Roadmap" />
         <item
             android:id="@+id/nav_receipts"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="My receipts" />
+            android:icon="@drawable/receipt_icon"
+            android:title="My Receipts" />
     </group>
 
-    <item android:title="Communicate">
-        <menu>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/phone_icon"
                 android:title="Contact Us" />
             <!--<item-->
                 <!--android:id="@+id/nav_send"-->
                 <!--android:icon="@drawable/ic_menu_send"-->
                 <!--android:title="Send" />-->
-        </menu>
-    </item>
+    </group>
 
 </menu>
