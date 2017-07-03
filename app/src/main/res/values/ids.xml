@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nav_home" type="id" />
+    <item name="nav_events" type="id" />
+    <item name="nav_ping" type="id" />
+    <item name="nav_map" type="id" />
+    <item name="nav_contact" type="id" />
+</resources>
