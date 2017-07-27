@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/name_et_textinputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+     <android.support.v7.widget.LinearLayoutCompat
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:weightSum="5"
+         android:layout_marginTop="79dp"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp">
+        <EditText
+            android:id="@+id/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Registration ID"
+            android:layout_weight="4" />
+
+         <Button
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="GO"
+             android:layout_weight="1"/>
+     </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="OR"
+        android:textSize="30sp"
+        android:id="@+id/tv_OR"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Scan QR"
+        android:textSize="18sp"
+        android:layout_below="@id/tv_OR"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btn_QR"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_QR"
+        android:layout_marginTop="50dp"
+        android:text="temp text"
+        android:layout_centerVertical="true"
+        android:id="@+id/shitty_tv"/>
+</RelativeLayout>
