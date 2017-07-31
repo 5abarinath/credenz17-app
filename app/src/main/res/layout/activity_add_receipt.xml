@@ -15,7 +15,7 @@
          android:layout_height="wrap_content"
          android:orientation="horizontal"
          android:weightSum="5"
-         android:layout_marginTop="79dp"
+         android:layout_marginTop="50dp"
          android:layout_marginLeft="50dp"
          android:layout_marginRight="50dp">
         <EditText
@@ -23,13 +23,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Registration ID"
-            android:layout_weight="4" />
+            android:layout_weight="1" />
 
          <Button
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
              android:text="GO"
-             android:layout_weight="1"/>
+             android:layout_weight="4"
+             android:id="@+id/btn_getReceipt"/>
      </android.support.v7.widget.LinearLayoutCompat>
     </android.support.design.widget.TextInputLayout>
 
@@ -42,6 +43,7 @@
         android:textSize="30sp"
         android:id="@+id/tv_OR"/>
 
+    <!--#TODO: Use Material Buttons-->
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,15 +52,15 @@
         android:text="Scan QR"
         android:textSize="18sp"
         android:layout_below="@id/tv_OR"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:id="@+id/btn_QR"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btn_QR"
-        android:layout_marginTop="50dp"
-        android:text="temp text"
-        android:layout_centerVertical="true"
-        android:id="@+id/shitty_tv"/>
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/btn_QR"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:text="temp text"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:id="@+id/shitty_tv"/>-->
 </RelativeLayout>

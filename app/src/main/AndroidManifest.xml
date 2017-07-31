@@ -3,6 +3,7 @@
     package="com.pisb.credenz17">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -12,6 +13,7 @@
         android:theme="@style/AppTheme">
 
         <!-- android:excludeFromRecents="true"> -->
+
         <activity android:name=".splashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
