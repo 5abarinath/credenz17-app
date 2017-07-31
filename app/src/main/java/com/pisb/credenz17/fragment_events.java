@@ -3,6 +3,7 @@ package com.pisb.credenz17;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +16,7 @@ import android.view.ViewGroup;
 public class fragment_events extends Fragment {
 
     View view;
-
+    CardView card1;
 
     @Nullable
     @Override
@@ -28,6 +29,15 @@ public class fragment_events extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        card1 = (CardView) view.findViewById(R.id.card1);
+
+        card1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
         getActivity().setTitle("Events");
     }
 }

@@ -6,4 +6,7 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Feedback</string>
+
+    <string name="receipt_header"><u><b>CREDENZ \'17</b></u></string>
+    <string name="receipt_events_header"><u><b>Events:</b></u></string>
 </resources>
