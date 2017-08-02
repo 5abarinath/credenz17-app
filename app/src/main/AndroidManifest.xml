@@ -14,7 +14,8 @@
 
         <!-- android:excludeFromRecents="true"> -->
 
-        <activity android:name=".splashScreenActivity">
+        <activity android:name=".splashScreenActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,11 +26,14 @@
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="adjustPan" />
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".FeedbackActivity"
-            android:windowSoftInputMode="adjustPan" />
-        <activity android:name=".activity_addReceipt"/>
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity_addReceipt"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

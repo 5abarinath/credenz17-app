@@ -7,6 +7,15 @@
 
     <string name="action_settings">Feedback</string>
 
-    <string name="receipt_header"><u><b>CREDENZ \'17</b></u></string>
+    <string name="receipt_header"><u><b>RECEIPT</b></u></string>
     <string name="receipt_events_header"><u><b>Events:</b></u></string>
+    <string name="receipt_name_header"><u><b>Participants:</b></u></string>
+    <string name="receipt_category_header"><u><b>Category:</b></u></string>
+    <string name="receipt_college_header"><u><b>College:</b></u></string>
+    <string name="receipt_reg_header"><u><b>Registration Id:</b></u></string>
+
+    <string name="no_of_receipts">com.pisb.credenz17.receiptsCount</string>
+
+    <string name="contact_us"><b>Contact Us:</b>\nRajat Paliwal: +919890225872
+    \nStavan Shah: +919930317212</string>
 </resources>
