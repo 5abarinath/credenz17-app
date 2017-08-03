@@ -10,19 +10,22 @@
         <item
             android:id="@+id/nav_events"
             android:icon="@drawable/events_icon"
-            android:title="Events" />
+            android:title="Events"
+            android:visible="false"/>
         <item
             android:id="@+id/nav_ping"
             android:icon="@drawable/newsletter_icon"
-            android:title="P.I.N.G." />
+            android:title="P.I.N.G."
+            android:visible="false"/>
         <item
             android:id="@+id/nav_map"
             android:icon="@drawable/directions_icon"
-            android:title="Roadmap" />
+            android:title="Roadmap"
+            android:visible="false"/>
         <item
             android:id="@+id/nav_receipts"
             android:icon="@drawable/receipt_icon"
-            android:title="My Receipts" />
+            android:title="My Receipts"/>
     </group>
 
     <group android:checkableBehavior="single"
