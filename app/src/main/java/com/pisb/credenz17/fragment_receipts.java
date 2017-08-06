@@ -4,12 +4,14 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.IntegerRes;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -138,7 +140,28 @@ public class fragment_receipts extends Fragment {
         int receipt_count = sharedPref_receiptCount.getInt("count",-1);
 
         String op = "" + receipt_count;
-        Log.d("TAG", op);
+//        Log.d("TAG", op);
+
+        if(receipt_count == -1){
+            AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
+            alert.setTitle("Guidelines");
+            alert.setMessage(R.string.help_guidelines);
+
+//                alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+//                    public void onClick(DialogInterface dialog, int whichButton) {
+//                        //Your action here
+//                    }
+//                });
+
+            alert.setNegativeButton("OK",
+                    new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int whichButton) {
+                        }
+                    });
+
+            alert.show();
+        }
+
         for(int i=0; i<=receipt_count; i++) {
             String receipt_name = "receipt" + i;
             sharedPref_receipt = this.getActivity().getSharedPreferences(receipt_name, Context.MODE_PRIVATE);

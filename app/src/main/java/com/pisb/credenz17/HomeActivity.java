@@ -78,6 +78,14 @@ public class HomeActivity extends AppCompatActivity
             startActivity(intent);
             return true;
         }
+        else if(id == R.id.action_share) {
+            Intent share = new Intent(android.content.Intent.ACTION_SEND);
+            share.setType("text/plain");
+            String sharebody = getString(R.string.app_share) + "https://play.google.com/store/apps/details?id=com.pisb.credenz17";
+            //share.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject here");
+            share.putExtra(android.content.Intent.EXTRA_TEXT, sharebody);
+            startActivity(Intent.createChooser(share, "Share via"));
+        }
 
         return super.onOptionsItemSelected(item);
     }

@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -65,21 +66,26 @@ public class activity_addReceipt extends AppCompatActivity {
         btn_getReceipt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                regID = Integer.parseInt(ET_reg.getText().toString());
-                createDialog();
+                if(ET_reg.getText().toString().length() == 0)
+                    Toast.makeText(activity_addReceipt.this, "Please enter registration id",Toast.LENGTH_SHORT).show();
+                else {
+                    regID = Integer.parseInt(ET_reg.getText().toString());
+                    createDialog();
+                }
             }
         });
     }
 
     public void createDialog(){
         final EditText input1 = new EditText(this);
+        input1.setInputType(InputType.TYPE_CLASS_NUMBER);
         TableLayout.LayoutParams params = new TableLayout.LayoutParams();
         params.setMargins(5, 5, 5, 5);
         input1.setLayoutParams(params);
 
         new AlertDialog.Builder(this)
                 .setTitle("Verifiction")
-                .setMessage("Please enter your phone number.")
+                .setMessage("Please enter your registered mobile number.")
                 .setView(input1)
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int whichButton) {
@@ -111,29 +117,36 @@ public class activity_addReceipt extends AppCompatActivity {
                 //if qr contains data
 //                Toast.makeText(this, result.getContents(), Toast.LENGTH_LONG).show();
 //                tv.setText(result.getContents());
-                String lul[] = new String[8];
-                lul = result.getContents().split(";");
-                String kappa = "Name = " + lul[0] + "Email = " + lul[1] + "Phone = " + lul[2] + "College = " + lul[3] + "Volunteer = " + lul[4] + "Date = " + lul[5] + "Events = " + lul[6] + "Regist = " + lul[7];
-//                tv.setText(kappa);
+                String verify = result.getContents();
 
-                //TODO: Return value to fragment_receipts
 
-                Intent returnIntent = new Intent();
-                returnIntent.putExtra("name1",lul[0]);
-                returnIntent.putExtra("name2",lul[1]);
-                returnIntent.putExtra("name3",lul[2]);
-                returnIntent.putExtra("name4",lul[3]);
-                returnIntent.putExtra("email",lul[4]);
-//                returnIntent.putExtra("phone",lul[5]);
-                returnIntent.putExtra("college",lul[6]);
-                returnIntent.putExtra("volunteer",lul[7]);
-                returnIntent.putExtra("events", lul[8]);
-                returnIntent.putExtra("amount",lul[9]);
-                returnIntent.putExtra("year",lul[10]);
-                returnIntent.putExtra("regist",lul[11]);
-                returnIntent.putExtra("date",lul[12]);
-                setResult(Activity.RESULT_OK, returnIntent);
-                finish();
+                if(!(verify.substring(0,2).equals("@&")))
+                    Toast.makeText(activity_addReceipt.this,"Invalid QR Code",Toast.LENGTH_SHORT).show();
+                else {
+                    String lul[] = new String[8];
+                    lul = verify.substring(2,verify.length()).split(";");
+                    String kappa = "Name = " + lul[0] + "Email = " + lul[1] + "Phone = " + lul[2] + "College = " + lul[3] + "Volunteer = " + lul[4] + "Date = " + lul[5] + "Events = " + lul[6] + "Regist = " + lul[7];
+                    //                tv.setText(kappa);
+
+                    //TODO: Return value to fragment_receipts
+
+                    Intent returnIntent = new Intent();
+                    returnIntent.putExtra("name1", lul[0]);
+                    returnIntent.putExtra("name2", lul[1]);
+                    returnIntent.putExtra("name3", lul[2]);
+                    returnIntent.putExtra("name4", lul[3]);
+                    returnIntent.putExtra("email", lul[4]);
+                    //                returnIntent.putExtra("phone",lul[5]);
+                    returnIntent.putExtra("college", lul[6]);
+                    returnIntent.putExtra("volunteer", lul[7]);
+                    returnIntent.putExtra("events", lul[8]);
+                    returnIntent.putExtra("amount", lul[9]);
+                    returnIntent.putExtra("year", lul[10]);
+                    returnIntent.putExtra("regist", lul[11]);
+                    returnIntent.putExtra("date", lul[12]);
+                    setResult(Activity.RESULT_OK, returnIntent);
+                    finish();
+                }
             }
         } else {
             super.onActivityResult(requestCode, resultCode, data);

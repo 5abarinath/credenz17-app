@@ -20,4 +20,17 @@
     \nStavan Shah: +919930317212</string>
 
     <string name="home_screen_text">Visit our website:\nwww.credenz.info</string>
+
+    <string name="help_guidelines">Please read these instructions carefully:
+        \n\n<b>1.</b> Click on the \'+\' button to add an e-Receipt
+        \n\n<b>2.</b> In case of an offline registration where you received a paper receipt, you will receive
+        your registration id for the e-receipt via email.
+        \n\n<b>3.</b> Scan the QR to get your receipt immediately, else you can also enter your registration
+        ID (present in the system generated e-mail) to generate your e-receipt.
+        \n\n<b>4.</b> You can save a maximum of 8 receipts at a time. If you have more,
+        please use the e-receipt sent on your registered email address.</string>
+
+    <string name="app_share">This is the official CREDENZ \'17 app.\n\nIt is an
+        attempt to make digital receipts available to all our participants. So, once registered,
+        do store your receipt(s) here to get rid of paper receipts.\n\n</string>
 </resources>
