@@ -2,6 +2,7 @@ package com.pisb.credenz17;
 
 import android.app.Fragment;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -85,6 +86,10 @@ public class HomeActivity extends AppCompatActivity
             //share.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject here");
             share.putExtra(android.content.Intent.EXTRA_TEXT, sharebody);
             startActivity(Intent.createChooser(share, "Share via"));
+        }
+        else if(id == R.id.action_privPolicy) {
+            Intent share = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.privacy_policy_link)));
+            startActivity(share);
         }
 
         return super.onOptionsItemSelected(item);
