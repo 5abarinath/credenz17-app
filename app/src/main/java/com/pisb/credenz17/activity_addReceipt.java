@@ -52,7 +52,6 @@ public class activity_addReceipt extends AppCompatActivity {
         qrBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(activity_addReceipt.this, "Started Cam", Toast.LENGTH_SHORT).show();
                 qrScan.initiateScan();
             }
         });
