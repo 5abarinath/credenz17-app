@@ -10,18 +10,15 @@
         <item
             android:id="@+id/nav_events"
             android:icon="@drawable/events_icon"
-            android:title="Events"
-            android:visible="false"/>
+            android:title="Events"/>
         <item
             android:id="@+id/nav_ping"
             android:icon="@drawable/newsletter_icon"
-            android:title="P.I.N.G."
-            android:visible="false"/>
+            android:title="P.I.N.G."/>
         <item
             android:id="@+id/nav_map"
             android:icon="@drawable/directions_icon"
-            android:title="Roadmap"
-            android:visible="false"/>
+            android:title="Roadmap"/>
         <item
             android:id="@+id/nav_receipts"
             android:icon="@drawable/receipt_icon"

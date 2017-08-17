@@ -103,24 +103,34 @@ public class HomeActivity extends AppCompatActivity
 
         Fragment fragment = null;
         navigationView.setCheckedItem(id);
+        boolean fragmentFlag = true;
 
         if (id == R.id.nav_home) {
+            fragmentFlag = true;
             fragment = new fragment_home();
         } else if (id == R.id.nav_events) {
+            fragmentFlag = true;
             fragment = new fragment_events();
         } else if (id == R.id.nav_ping) {
+            fragmentFlag = true;
             fragment = new fragment_ping();
         } else if (id == R.id.nav_map) {
-            fragment = new fragment_map();
+            fragmentFlag = false;
+            Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_receipts) {
+            fragmentFlag = true;
             fragment = new fragment_receipts();
         } else if(id == R.id.nav_contact) {
+            fragmentFlag = true;
             fragment = new fragment_contactus();
         }
 
-        getFragmentManager().beginTransaction().
-                replace(R.id.content_home, fragment)
-                .commit();
+        if(fragmentFlag) {
+            getFragmentManager().beginTransaction().
+                    replace(R.id.content_home, fragment)
+                    .commit();
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
