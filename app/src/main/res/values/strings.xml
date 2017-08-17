@@ -36,4 +36,5 @@
         do store your receipt(s) here to get rid of paper receipts.\n\n</string>
 
     <string name="privacy_policy_link">https://sites.google.com/view/credenz17-privacy-policy/home</string>
+    <string name="title_activity_maps">Roadmap</string>
 </resources>
