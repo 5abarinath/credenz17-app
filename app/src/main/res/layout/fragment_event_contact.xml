@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_coord1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text=""
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_coord1_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColorLink="@color/colorLink"/>
+
+    <TextView
+        android:id="@+id/tv_coord2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text=""
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_coord2_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColorLink="@color/colorLink"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:autoLink="web"
+        android:textColorLink="@color/colorLink"
+        android:layout_gravity="center"
+        android:text=""
+        android:textSize="18sp"/>
+
+
+
+</LinearLayout>

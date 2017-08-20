@@ -13,6 +13,7 @@
     <color name="colorE4">#84a7a1</color>
     <color name="colorBackground">#f0f0f0</color>
     <color name="colorText">#1a1a1a</color>
+    <color name="colorLink">#0000ff</color>
 
 
     <color name="button_pressed">#ff8a00</color>

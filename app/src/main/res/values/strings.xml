@@ -5,7 +5,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Feedback</string>
+    <string name="action_feedback">Feedback</string>
     <string name="action_privPolicy">Privacy Policy</string>
 
     <string name="receipt_header"><u><b>RECEIPT</b></u></string>
@@ -37,4 +37,62 @@
 
     <string name="privacy_policy_link">https://sites.google.com/view/credenz17-privacy-policy/home</string>
     <string name="title_activity_maps">Roadmap</string>
+    <string name="title_activity_webweaver">Web Weaver</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="action_intro">Intro</string>
+    <string name="action_rules">Rules</string>
+    <string name="action_structure">Structure</string>
+    <string name="action_judging">Judging</string>
+    <string name="action_contact">Contact</string>
+
+    <string name="event_name_web">Web Weaver</string>
+
+
+    <!--WEB WEAVER-->
+    <string name="web_intro">Think about what happens when you visit a website that is poorly
+        designed as opposed to one that is clean, easy-to-use and modern? The look and feel of a
+        website is critical to keep visitors engaged online. If you think you can do this, it\'s
+        time for you to design such a site. A striking blend of technology, skill and CREATIVITY
+        can help you win this competition. Develop a website captivating enough to grab the
+        attention of your peers and an experienced panel of judges.\n\n</string>
+    <string name="web_rules">1. All teams shall have to get their own laptops on the day of the competition. It is advisable to get a
+high speed data card (even though net connection will be provided), for your convenience.\n\n
+2. A team of maximum 3 is permissible for the event.\n\n
+3. The fee for the events is Rs 150/- for non-IEEE members and Rs 120/- for IEEE members per
+team.\n\n
+4. All the participants should bring receipt and valid I-cards while coming for the contest. A single
+team member without an I-card will result in the disqualification of the entire team.\n\n
+5. Use of any front end framework is permitted.\n\n
+6. You are allowed to use any language but readymade template must not be used.\n\n
+7. Wordpress is not allowed.\n\n</string>
+    <string name="web_structure"><b><u>1st Round</u></b>\n
+1. A problem statement shall be given to the participants online.\n
+2. The problem statement shall be released approximately 15 Days prior to
+the main event.\n
+3. The team should mail the files in zip archive. (All files with understandable documentation.)\n\n
+<b><u>2nd Round</u></b>\n
+<b>1.</b> The second round shall be conducted at PICT.\n
+2. Approximately 10 teams shall be shortlisted.\n
+3. The teams shall be given certain add-ons over the pages designed earlier.\n
+4. Five add-ons shall be given, specific to the pages designed by the participants.\n\n</string>
+    <string name="web_judging">1. Creativity and originality of the design.\n\n
+2. Distinct features incorporated in the design.\n\n
+3. Navigation through the site, how well the pages are interconnected.\n\n
+4. Persuasiveness of the design, the efficiency of the site to give primary
+        information on the required theme.\n\n
+5. Based on the your Design, UI/UX and Development.\n\n
+6. Additional points will be awarded for backend development.\n\n</string>
+
+    <string name="web_coord1">Anurag Kallurwar</string>
+    <string name="web_coord1_contact">+91 9405225170</string>
+    <string name="web_coord2">Chinmay Shimpi</string>
+    <string name="web_coord2_contact">+91 9403192826</string>
+    <string name="web_email">webweaver.credenz17@gmail.com</string>
+
+
+    <!--B-Plan-->
+    <string name="bplan_intro">yfdsmfbjsdvjshb</string>
+    <string name="bplan_rules">assdfsdfsd</string>
 </resources>

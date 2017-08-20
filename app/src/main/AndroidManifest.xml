@@ -57,7 +57,11 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".activity_webweaver"
+            android:label="@string/title_activity_webweaver"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
