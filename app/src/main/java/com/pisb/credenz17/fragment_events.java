@@ -1,6 +1,7 @@
 package com.pisb.credenz17;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.CardView;
@@ -35,7 +36,8 @@ public class fragment_events extends Fragment {
         card1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(getActivity(), activity_webweaver.class);
+                startActivity(intent);
             }
         });
         getActivity().setTitle("Events");
