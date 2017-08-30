@@ -13,8 +13,11 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.CardView;
+import android.support.v7.widget.PopupMenu;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -135,6 +138,44 @@ public class fragment_receipts extends Fragment {
         receipt[6]=(CardView) view.findViewById(R.id.card_view7);
         receipt[7]=(CardView) view.findViewById(R.id.card_view8);
 
+        for(int i = 0; i<=7; i++){
+            receipt[i].setClickable(true);
+
+            final int LUL = i;
+            receipt[i].setOnLongClickListener(new View.OnLongClickListener() {
+                @Override
+                public boolean onLongClick(View view) {
+
+                    AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
+                    alert.setTitle("Delete Receipt?");
+                    alert.setMessage(getString(R.string.alert_receipt_delete, tv_regist[LUL].getText()));
+
+                    alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int whichButton) {
+                            receipt[LUL].setVisibility(View.GONE);
+                            Toast.makeText(getActivity(),"Receipt deleted", Toast.LENGTH_SHORT).show();
+                            String receipt_name = "receipt" + LUL;
+                            sharedPref_receipt = getActivity().getSharedPreferences(receipt_name, Context.MODE_PRIVATE);
+                            SharedPreferences.Editor editor = sharedPref_receipt.edit();
+                            editor.putBoolean("deleted", true);
+                            editor.apply();
+                        }
+                    });
+
+                    alert.setNegativeButton("No",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int whichButton) {
+                                    //Do Nothing
+                                }
+                            });
+
+                    alert.show();
+                    return false;
+                }
+            });
+        }
+
+
 
         SharedPreferences sharedPref_receiptCount = this.getActivity().getSharedPreferences(getString(R.string.no_of_receipts), Context.MODE_PRIVATE);
         int receipt_count = sharedPref_receiptCount.getInt("count",-1);
@@ -166,41 +207,46 @@ public class fragment_receipts extends Fragment {
             String receipt_name = "receipt" + i;
             sharedPref_receipt = this.getActivity().getSharedPreferences(receipt_name, Context.MODE_PRIVATE);
 
-            String name1 = sharedPref_receipt.getString("name1","");
-            String name2 = sharedPref_receipt.getString("name2","");
-            String name3 = sharedPref_receipt.getString("name3","");
-            String name4 = sharedPref_receipt.getString("name4","");
-            String college = sharedPref_receipt.getString("college","");
-            String amount = sharedPref_receipt.getString("amount","");
-            String date = sharedPref_receipt.getString("date","");
-            String events = sharedPref_receipt.getString("eventCode","");
-            String regist = sharedPref_receipt.getString("regID","");
-            int year = sharedPref_receipt.getInt("year",-1);
+            boolean deleted = sharedPref_receipt.getBoolean("deleted", false);
 
-            tv_regist[i].setText(regist);
-            tv_name[i].setText(name1);
-            if(name2.length() != 0)
-                tv_name[i].append("\n"+name2);
-            if(name3.length() != 0)
-                tv_name[i].append("\n"+name3);
-            if(name4.length() != 0)
-                tv_name[i].append("\n"+name4);
-            tv_college[i].setText(college);
-            tv_amount[i].setText("Total Amount: " + amount);
-            tv_date[i].setText("Date: " + date);
+            Log.d("TAG", receipt_name+": Deleted ="+deleted);
+            if (!deleted) {
+                String name1 = sharedPref_receipt.getString("name1", "");
+                String name2 = sharedPref_receipt.getString("name2", "");
+                String name3 = sharedPref_receipt.getString("name3", "");
+                String name4 = sharedPref_receipt.getString("name4", "");
+                String college = sharedPref_receipt.getString("college", "");
+                String amount = sharedPref_receipt.getString("amount", "");
+                String date = sharedPref_receipt.getString("date", "");
+                String events = sharedPref_receipt.getString("eventCode", "");
+                String regist = sharedPref_receipt.getString("regID", "");
+                int year = sharedPref_receipt.getInt("year", -1);
 
-            if(year==0)
-                tv_year[i].setText("Junior");
-            else
-                tv_year[i].setText("Senior");
+                tv_regist[i].setText(regist);
+                tv_name[i].setText(name1);
+                if (name2.length() != 0)
+                    tv_name[i].append("\n" + name2);
+                if (name3.length() != 0)
+                    tv_name[i].append("\n" + name3);
+                if (name4.length() != 0)
+                    tv_name[i].append("\n" + name4);
+                tv_college[i].setText(college);
+                tv_amount[i].setText("Total Amount: " + amount);
+                tv_date[i].setText("Date: " + date);
+
+                if (year == 0)
+                    tv_year[i].setText("Junior");
+                else
+                    tv_year[i].setText("Senior");
 
 
-            for(int j=0; j<=15; j++){
-                int temp_int = (int)events.charAt(j);
-                if(temp_int!=48)
-                    tv_events[i].append(eventList[j]+"\n");
+                for (int j = 0; j <= 15; j++) {
+                    int temp_int = (int) events.charAt(j);
+                    if (temp_int != 48)
+                        tv_events[i].append(eventList[j] + "\n");
+                }
+                receipt[i].setVisibility(View.VISIBLE);
             }
-            receipt[i].setVisibility(View.VISIBLE);
         }
 
     }
@@ -239,7 +285,7 @@ public class fragment_receipts extends Fragment {
                     receiptCount++;
 
                     if(receiptCount>7)
-                        receiptCount=0;
+                        receiptCount=0; //TODO: Change replacement algorithm
 
                     SharedPreferences.Editor editor = sharedPref_receiptCount.edit();
                     editor.putInt("count", receiptCount);
@@ -259,6 +305,7 @@ public class fragment_receipts extends Fragment {
                 editor.putInt("year", year);
                 editor.putString("eventCode", events);
                 editor.putString("regID",regist);
+                editor.putBoolean("deleted", false);
                 editor.apply();
 
                 tv_regist[receiptCount].setText(regist);

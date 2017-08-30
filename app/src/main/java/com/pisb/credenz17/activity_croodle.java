@@ -19,7 +19,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-public class activity_webweaver extends AppCompatActivity {
+public class activity_croodle extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -90,12 +90,11 @@ public class activity_webweaver extends AppCompatActivity {
         private static final String ARG_SECTION_NUMBER = "section_number";
         private static final int DATA[] = new int[6];
 
-        public PlaceholderFragment() {
+        public PlaceholderFragment() {  //TODO: Add correct data
             DATA[0] = R.string.web_intro;
             DATA[1] = R.string.web_rules;
-            DATA[2] = R.string.web_question;
-            DATA[3] = R.string.web_structure;
-            DATA[4] = R.string.web_judging;
+            DATA[2] = R.string.web_structure;
+            DATA[3] = R.string.web_judging;
         }
 
         /**
@@ -115,7 +114,7 @@ public class activity_webweaver extends AppCompatActivity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_event_data, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(getString(DATA[getArguments().getInt(ARG_SECTION_NUMBER)] ));
+            textView.setText("Will be updated soon!");
             return rootView;
         }
     }
@@ -127,7 +126,7 @@ public class activity_webweaver extends AppCompatActivity {
 
         private static final int CONTACT_DATA[] = new int[5];
 
-        public EventFragment_contact() {
+        public EventFragment_contact() { //TODO: Add Correct Data
             CONTACT_DATA[0] = R.string.web_coord1;
             CONTACT_DATA[1] = R.string.web_coord1_contact;
             CONTACT_DATA[2] = R.string.web_coord2;
@@ -171,7 +170,7 @@ public class activity_webweaver extends AppCompatActivity {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            if(position==5) {
+            if(position==4) {
                 return new EventFragment_contact();
             }
             else
@@ -181,23 +180,21 @@ public class activity_webweaver extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 6;
+            return 1;
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "Intro";
+                    return "Croodle";
                 case 1:
                     return "Rules";
                 case 2:
-                    return "Question";
-                case 3:
                     return "Structure";
-                case 4:
+                case 3:
                     return "Judging";
-                case 5:
+                case 4:
                     return "Contact";
             }
             return null;
