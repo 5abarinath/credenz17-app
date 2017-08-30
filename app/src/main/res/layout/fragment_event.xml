@@ -17,13 +17,13 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/card1"
                 android:layout_height="@dimen/card_height"
-                android:layout_margin="5dp"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
                 app:layout_columnSpan="1"
                 app:layout_gravity="fill_horizontal"
-                app:layout_rowSpan="1">
+                app:layout_rowSpan="1"
+                android:layout_marginTop="1dp">
                 <!--TODO: Use selectableItemBackgroundBorderless-->
                 <ImageButton
                     android:layout_width="wrap_content"
@@ -37,18 +37,21 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|bottom"
                     android:layout_marginBottom="10dp"
-                    android:text="@string/event_name_web" />
+                    android:text="@string/event_name_bplan" />
             </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
+                app:layout_columnWeight="1"
                 app:layout_columnSpan="2"
                 app:layout_rowSpan="1"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
-                android:id="@+id/card2"
-                android:layout_margin="5dp"
-                app:layout_gravity="fill_horizontal">
+                android:id="@+id/card4"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp">
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -58,9 +61,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|bottom"
-                    android:text="EVENT NAME"
+                    android:text="@string/event_name_contraption"
                     android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
+
+
 
 
             <!--ROW2-->
@@ -73,7 +78,7 @@
                 android:layout_height="@dimen/card_height_double"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
                 android:id="@+id/card3"
-                android:layout_margin="5dp">
+                android:layout_marginTop="1dp">
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -83,32 +88,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|bottom"
-                    android:text="EVENT NAME"
+                    android:text="@string/event_name_clash"
                     android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                app:layout_columnWeight="1"
-                app:layout_columnSpan="1"
-                app:layout_rowSpan="1"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:layout_height="@dimen/card_height"
-                app:cardBackgroundColor="@color/colorPrimaryLight"
-                android:id="@+id/card4"
-                android:layout_margin="5dp"
-                android:layout_marginBottom="0dp">
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"
-                    android:layout_gravity="center_horizontal" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:text="EVENT NAME"
-                    android:layout_marginBottom="10dp"/>
-            </android.support.v7.widget.CardView>
+
             <android.support.v7.widget.CardView
                 app:layout_columnWeight="1"
                 app:layout_columnSpan="1"
@@ -118,8 +101,8 @@
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
                 android:id="@+id/card5"
-                android:layout_margin="5dp"
-                android:layout_marginTop="0dp">
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp">
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -129,7 +112,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|bottom"
-                    android:text="EVENT NAME"
+                    android:text="@string/event_name_cretronix"
                     android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
 
@@ -138,9 +121,8 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/card6"
                 android:layout_height="@dimen/card_height"
-                android:layout_margin="5dp"
                 android:layout_marginBottom="0dp"
-                android:layout_marginTop="0dp"
+                android:layout_marginTop="1dp"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
                 app:layout_columnSpan="1"
                 app:layout_columnWeight="1"
@@ -159,15 +141,41 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|bottom"
                     android:layout_marginBottom="10dp"
-                    android:text="EVENT NAME" />
+                    android:text="@string/event_name_croodle" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card8"
+                android:layout_height="@dimen/card_height"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/colorPrimaryLight"
+                app:layout_columnSpan="2"
+                app:layout_columnWeight="1"
+                app:layout_rowSpan="1">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/event_name_nth" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
                 android:id="@+id/card7"
                 android:layout_height="@dimen/card_height"
-                android:layout_margin="5dp"
                 android:layout_marginBottom="0dp"
-                android:layout_marginTop="0dp"
+                android:layout_marginTop="1dp"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
                 app:layout_columnSpan="1"
                 app:layout_columnWeight="1"
@@ -186,35 +194,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|bottom"
                     android:layout_marginBottom="10dp"
-                    android:text="EVENT NAME" />
+                    android:text="@string/event_name_mad" />
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView
-                android:id="@+id/card8"
-                android:layout_height="@dimen/card_height_double"
-                android:layout_margin="5dp"
-                android:layout_marginBottom="0dp"
-                android:layout_marginTop="0dp"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                app:cardBackgroundColor="@color/colorPrimaryLight"
-                app:layout_columnSpan="1"
-                app:layout_columnWeight="1"
-                app:layout_rowSpan="2">
 
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    app:srcCompat="@mipmap/ic_launcher" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:layout_marginBottom="10dp"
-                    android:text="EVENT NAME" />
-            </android.support.v7.widget.CardView>
 
 
             <!--ROW 4-->
@@ -227,8 +210,8 @@
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
                 android:id="@+id/card9"
-                android:layout_margin="5dp"
-                android:layout_marginTop="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
                 android:layout_marginBottom="0dp">
                 <ImageButton
                     android:layout_width="wrap_content"
@@ -239,7 +222,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|bottom"
-                    android:text="EVENT NAME"
+                    android:text="@string/event_name_pixelate"
                     android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -251,8 +234,8 @@
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
                 android:id="@+id/card10"
-                android:layout_margin="5dp"
-                android:layout_marginTop="0dp">
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp">
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -262,7 +245,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|bottom"
-                    android:text="EVENT NAME"
+                    android:text="@string/event_name_quiz"
                     android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
 
@@ -278,8 +261,7 @@
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
                 android:id="@+id/card11"
-                android:layout_margin="5dp"
-                android:layout_marginTop="0dp"
+                android:layout_marginTop="1dp"
                 android:layout_marginBottom="0dp">
                 <ImageButton
                     android:layout_width="wrap_content"
@@ -290,7 +272,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|bottom"
-                    android:text="EVENT NAME"
+                    android:text="@string/event_name_rc"
                     android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -302,8 +284,8 @@
                 android:layout_height="@dimen/card_height_double"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
                 android:id="@+id/card12"
-                android:layout_margin="5dp"
-                android:layout_marginTop="0dp">
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp">
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -313,7 +295,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|bottom"
-                    android:text="EVENT NAME"
+                    android:text="@string/event_name_xodia"
                     android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -325,8 +307,7 @@
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
                 android:id="@+id/card13"
-                android:layout_margin="5dp"
-                android:layout_marginTop="0dp">
+                android:layout_marginTop="1dp">
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -336,7 +317,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|bottom"
-                    android:text="EVENT NAME"
+                    android:text="@string/event_name_web"
                     android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
 
@@ -352,8 +333,7 @@
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
                 android:id="@+id/card14"
-                android:layout_margin="5dp"
-                android:layout_marginTop="0dp"
+                android:layout_marginTop="1dp"
                 android:layout_marginBottom="0dp">
                 <ImageButton
                     android:layout_width="wrap_content"
@@ -364,30 +344,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|bottom"
-                    android:text="EVENT NAME"
-                    android:layout_marginBottom="10dp"/>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
-                app:layout_columnWeight="1"
-                app:layout_columnSpan="1"
-                app:layout_rowSpan="2"
-                android:clickable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:layout_height="@dimen/card_height_double"
-                app:cardBackgroundColor="@color/colorPrimaryLight"
-                android:id="@+id/card15"
-                android:layout_margin="5dp"
-                android:layout_marginTop="0dp">
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"
-                    android:layout_gravity="center_horizontal" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:text="EVENT NAME"
+                    android:text="@string/event_name_ppt"
                     android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
 
@@ -403,8 +360,8 @@
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
                 android:id="@+id/card16"
-                android:layout_margin="5dp"
-                android:layout_marginTop="0dp">
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp">
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -414,7 +371,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|bottom"
-                    android:text="EVENT NAME"
+                    android:text="@string/event_name_seminar"
                     android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
             <android.support.v7.widget.CardView
@@ -426,8 +383,7 @@
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
                 android:id="@+id/card17"
-                android:layout_margin="5dp"
-                android:layout_marginTop="0dp">
+                android:layout_marginTop="1dp">
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -437,7 +393,30 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|bottom"
-                    android:text="EVENT NAME"
+                    android:text="@string/event_name_workshops"
+                    android:layout_marginBottom="10dp"/>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                app:layout_columnWeight="1"
+                app:layout_columnSpan="2"
+                app:layout_rowSpan="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_height="@dimen/card_height"
+                app:cardBackgroundColor="@color/colorPrimaryLight"
+                android:id="@+id/card15"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/ic_launcher"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:text="@string/event_name_robo"
                     android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
 
@@ -452,8 +431,8 @@
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
                 android:id="@+id/card18"
-                android:layout_margin="5dp"
-                android:layout_marginTop="0dp">
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="5dp">
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -463,7 +442,30 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|bottom"
-                    android:text="EVENT NAME"
+                    android:text="@string/event_name_sd"
+                    android:layout_marginBottom="10dp"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                app:layout_columnSpan="2"
+                app:layout_rowSpan="1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_height="@dimen/card_height"
+                app:cardBackgroundColor="@color/colorPrimaryLight"
+                android:id="@+id/card2"
+                app:layout_gravity="fill_horizontal"
+                android:layout_marginLeft="1dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/ic_launcher"
+                    android:layout_gravity="center_horizontal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:text="@string/event_name_wallstreet"
                     android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
         </android.support.v7.widget.GridLayout>

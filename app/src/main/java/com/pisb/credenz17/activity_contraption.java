@@ -19,7 +19,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-public class activity_webweaver extends AppCompatActivity {
+public class activity_contraption extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -90,12 +90,12 @@ public class activity_webweaver extends AppCompatActivity {
         private static final String ARG_SECTION_NUMBER = "section_number";
         private static final int DATA[] = new int[6];
 
-        public PlaceholderFragment() {
-            DATA[0] = R.string.web_intro;
-            DATA[1] = R.string.web_rules;
-            DATA[2] = R.string.web_question;
-            DATA[3] = R.string.web_structure;
-            DATA[4] = R.string.web_judging;
+        public PlaceholderFragment() {  //TODO: Add correct data
+            DATA[0] = R.string.contraption_intro;
+            DATA[1] = R.string.contraption_rules;
+            DATA[2] = R.string.contraption_question;
+            DATA[3] = R.string.contraption_structure;
+            DATA[4] = R.string.contraption_judging;
         }
 
         /**
@@ -127,12 +127,12 @@ public class activity_webweaver extends AppCompatActivity {
 
         private static final int CONTACT_DATA[] = new int[5];
 
-        public EventFragment_contact() {
-            CONTACT_DATA[0] = R.string.web_coord1;
-            CONTACT_DATA[1] = R.string.web_coord1_contact;
-            CONTACT_DATA[2] = R.string.web_coord2;
-            CONTACT_DATA[3] = R.string.web_coord2_contact;
-            CONTACT_DATA[4] = R.string.web_email;
+        public EventFragment_contact() { //TODO: Add Correct Data
+            CONTACT_DATA[0] = R.string.contraption_coord1;
+            CONTACT_DATA[1] = R.string.contraption_coord1_contact;
+            CONTACT_DATA[2] = R.string.contraption_coord2;
+            CONTACT_DATA[3] = R.string.contraption_coord2_contact;
+            CONTACT_DATA[4] = R.string.contraption_email;
         }
 
         @Override
@@ -180,7 +180,6 @@ public class activity_webweaver extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            // Show 3 total pages.
             return 6;
         }
 
