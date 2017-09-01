@@ -26,26 +26,6 @@
         android:textColorLink="@color/colorLink"/>
 
     <TextView
-        android:id="@+id/tv_coord2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:text=""
-        android:layout_marginTop="50dp"
-        android:layout_gravity="center"/>
-
-    <TextView
-        android:id="@+id/tv_coord2_contact"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autoLink="phone"
-        android:text=""
-        android:textSize="18sp"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"
-        android:textColorLink="@color/colorLink"/>
-
-    <TextView
         android:id="@+id/tv_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
