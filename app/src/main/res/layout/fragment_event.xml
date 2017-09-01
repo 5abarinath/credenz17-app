@@ -14,7 +14,7 @@
 
 
             <!--ROW 1-->
-            <android.support.v7.widget.CardView
+            -<android.support.v7.widget.CardView
                 android:id="@+id/card1"
                 android:layout_height="@dimen/card_height"
                 android:clickable="true"
@@ -26,19 +26,14 @@
                 app:layout_rowSpan="1"
                 android:layout_marginTop="1dp">
                 <!--TODO: Use selectableItemBackgroundBorderless-->
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    app:srcCompat="@mipmap/ic_launcher"
-                    android:clickable="false"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/event_name_bplan" />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:scaleType="center"
+                app:srcCompat="@drawable/bplan1" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -53,18 +48,15 @@
                 android:layout_marginBottom="0dp"
                 android:layout_marginTop="1dp"
                 android:layout_marginLeft="1dp">
+
                 <ImageButton
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"
                     android:layout_gravity="center_horizontal"
-                    android:clickable="false"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:text="@string/event_name_contraption"
-                    android:layout_marginBottom="10dp"/>
+                    android:background="@android:color/transparent"
+                    android:clickable="false"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/contraption2" />
             </android.support.v7.widget.CardView>
 
 
@@ -82,17 +74,13 @@
                 android:id="@+id/card3"
                 android:layout_marginTop="1dp">
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/clash"
                     android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
                     android:clickable="false"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:text="@string/event_name_clash"
-                    android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -107,17 +95,13 @@
                 android:layout_marginTop="1dp"
                 android:layout_marginLeft="1dp">
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/cretronix1"
                     android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
                     android:clickable="false"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:text="@string/event_name_cretronix"
-                    android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
 
 
@@ -136,18 +120,13 @@
                 android:foreground="?android:attr/selectableItemBackground">
 
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/croodle1"
                     android:layout_gravity="center_horizontal"
-                    app:srcCompat="@mipmap/ic_launcher"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
                     android:clickable="false"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/event_name_croodle" />
             </android.support.v7.widget.CardView>
 
 
@@ -164,18 +143,13 @@
                 android:foreground="?android:attr/selectableItemBackground">
 
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/madtalks1"
                     android:layout_gravity="center_horizontal"
-                    app:srcCompat="@mipmap/ic_launcher"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
                     android:clickable="false"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/event_name_mad" />
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -192,18 +166,13 @@
                 app:layout_rowSpan="1">
 
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/nth1"
                     android:layout_gravity="center_horizontal"
-                    app:srcCompat="@mipmap/ic_launcher"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
                     android:clickable="false"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/event_name_nth" />
             </android.support.v7.widget.CardView>
 
 
@@ -220,17 +189,13 @@
                 android:layout_marginTop="1dp"
                 android:layout_marginBottom="0dp">
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/paper"
                     android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
                     android:clickable="false"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:text="@string/event_name_ppt"
-                    android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -246,17 +211,13 @@
                 android:layout_marginLeft="1dp"
                 android:layout_marginBottom="0dp">
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/pixelate"
                     android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
                     android:clickable="false"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:text="@string/event_name_pixelate"
-                    android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
 
 
@@ -271,17 +232,13 @@
                 android:id="@+id/card15"
                 android:layout_marginTop="1dp">
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/roboliga"
                     android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
                     android:clickable="false"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:text="@string/event_name_robo"
-                    android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
 
 
@@ -298,17 +255,13 @@
                 android:layout_marginTop="1dp"
                 android:layout_marginLeft="1dp">
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/quiz1"
                     android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
                     android:clickable="false"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:text="@string/event_name_quiz"
-                    android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
 
 
@@ -326,17 +279,13 @@
                 android:layout_marginTop="1dp"
                 android:layout_marginBottom="0dp">
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/revb"
                     android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
                     android:clickable="false"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:text="@string/event_name_rc"
-                    android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
 
 
@@ -352,17 +301,13 @@
                 android:layout_marginTop="1dp"
                 android:layout_marginLeft="1dp">
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/sd"
                     android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
                     android:clickable="false"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:text="@string/event_name_sd"
-                    android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -377,17 +322,13 @@
                 android:layout_marginTop="1dp"
                 android:layout_marginLeft="1dp">
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/seminars"
                     android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
                     android:clickable="false"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:text="@string/event_name_seminar"
-                    android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
 
 
@@ -402,17 +343,13 @@
                 android:id="@+id/card13"
                 android:layout_marginTop="1dp">
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/web"
                     android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
                     android:clickable="false"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:text="@string/event_name_web"
-                    android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
 
 
@@ -428,17 +365,13 @@
                 android:layout_marginTop="1dp"
                 android:layout_marginLeft="1dp">
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/stockwhite"
                     android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
                     android:clickable="false"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:text="@string/event_name_wallstreet"
-                    android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
 
 
@@ -454,17 +387,13 @@
                 android:id="@+id/card12"
                 android:layout_marginTop="1dp">
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/xodia1"
                     android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
                     android:clickable="false"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:text="@string/event_name_xodia"
-                    android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
@@ -479,17 +408,13 @@
                 android:layout_marginTop="1dp"
                 android:layout_marginLeft="1dp">
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/workshop"
                     android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
                     android:clickable="false"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:text="@string/event_name_workshops"
-                    android:layout_marginBottom="10dp"/>
             </android.support.v7.widget.CardView>
 
 
