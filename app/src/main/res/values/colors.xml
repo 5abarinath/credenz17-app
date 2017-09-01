@@ -13,9 +13,11 @@
     <color name="colorE5">#66002744</color>
     <color name="colorE6">#9900495e</color>
     <color name="colorBackground">#fafafa</color>
+    <color name="homeBackground">#f0f0f0</color>
     <color name="colorText">#1a1a1a</color>
     <color name="colorLink">#0000ff</color>
     <color name="button_pressed">#ff8a00</color>
     <color name="button_focused">#ff8a00</color>
     <color name="button_default">#1c76bb</color>
+    <color name="button_bg">#00ffffff</color>
 </resources>
