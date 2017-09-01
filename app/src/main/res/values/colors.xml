@@ -1,21 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!--<color name="colorPrimary">#3F51B5</color>-->
+<!--<resources>-->
+    <!--&lt;!&ndash;<color name="colorPrimary">#3F51B5</color>&ndash;&gt;-->
+    <!--&lt;!&ndash;<color name="colorPrimaryDark">#303F9F</color>&ndash;&gt;-->
+    <!--&lt;!&ndash;<color name="colorAccent">#FF4081</color>&ndash;&gt;-->
+    <!--<color name="colorPrimary">#647587</color>-->
+    <!--<color name="colorPrimaryDark">#394a5a</color>-->
+    <!--<color name="colorAccent">#92a4b7</color>-->
+    <!--<color name="colorPrimaryLight">#92a4b7</color>-->
+    <!--<color name="colorE1">#789897</color>-->
+    <!--<color name="coloE2">#afc1c8</color>-->
+    <!--<color name="colorE3">#a4bbcf</color>-->
+    <!--<color name="colorE4">#84a7a1</color>-->
+    <!--<color name="colorBackground">#f0f0f0</color>-->
+    <!--<color name="colorText">#1a1a1a</color>-->
+    <!--<color name="colorLink">#0000ff</color>-->
+
+
+    <!--<color name="button_pressed">#ff8a00</color>-->
+    <!--<color name="button_focused">#ff8a00</color>-->
+    <!--<color name="button_default">#1c76bb</color>-->
+<!--</resources>-->
+
+<resources><!--<color name="colorPrimary">#3F51B5</color>-->
     <!--<color name="colorPrimaryDark">#303F9F</color>-->
     <!--<color name="colorAccent">#FF4081</color>-->
-    <color name="colorPrimary">#647587</color>
-    <color name="colorPrimaryDark">#394a5a</color>
-    <color name="colorAccent">#92a4b7</color>
-    <color name="colorPrimaryLight">#92a4b7</color>
-    <color name="colorE1">#789897</color>
-    <color name="coloE2">#afc1c8</color>
-    <color name="colorE3">#a4bbcf</color>
-    <color name="colorE4">#84a7a1</color>
-    <color name="colorBackground">#f0f0f0</color>
+
+
+    <color name="colorPrimaryDark">#006a86</color>
+    <color name="colorPrimary">#3f98b6</color>
+    <color name="colorAccent">#75c9e8</color>
+    <color name="colorPrimaryLight">#4092a4b7</color>
+    <color name="eventBackground">#99949494</color>
+
+    <!--<color name="colorE3">#dbe6c8</color>-->
+    <!--<color name="colorE2">#42455c</color>-->
+    <!--<color name="colorE1">#b36e84</color>-->
+    <!--<color name="colorE4">#eba7ab</color>-->
+    <!--<color name="colorE5">#dde8f0</color>-->
+    <color name="colorE1">#8900495e</color>
+    <color name="colorE2">#89335556</color>
+    <color name="colorE3">#733c9a7e</color>
+    <color name="colorE4">#7372c985</color>
+    <color name="colorE5">#66002744</color>
+    <color name="colorE6">#9900495e</color>
+    <color name="colorBackground">#fafafa</color>
     <color name="colorText">#1a1a1a</color>
     <color name="colorLink">#0000ff</color>
-
-
     <color name="button_pressed">#ff8a00</color>
     <color name="button_focused">#ff8a00</color>
     <color name="button_default">#1c76bb</color>
