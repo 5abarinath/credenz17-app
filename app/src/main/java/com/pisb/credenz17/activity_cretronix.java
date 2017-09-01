@@ -129,26 +129,18 @@ public class activity_cretronix extends AppCompatActivity {
         public EventFragment_contact() {
             CONTACT_DATA[0] = R.string.cretronix_coord1;
             CONTACT_DATA[1] = R.string.cretronix_coord1_contact;
-            CONTACT_DATA[2] = R.string.cretronix_coord2;
-            CONTACT_DATA[3] = R.string.cretronix_coord2_contact;
             CONTACT_DATA[4] = R.string.cretronix_email;
         }
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_event_contact, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_event_contact_half, container, false);
             TextView tv_coord1 = (TextView) rootView.findViewById(R.id.tv_coord1);
             tv_coord1.setText(getString(CONTACT_DATA[0]));
 
             TextView tv_coord1_contact = (TextView) rootView.findViewById(R.id.tv_coord1_contact);
             tv_coord1_contact.setText(getString(CONTACT_DATA[1]));
-
-            TextView tv_coord2 = (TextView) rootView.findViewById(R.id.tv_coord2);
-            tv_coord2.setText(getString(CONTACT_DATA[2]));
-
-            TextView tv_coord2_contact = (TextView) rootView.findViewById(R.id.tv_coord2_contact);
-            tv_coord2_contact.setText(getString(CONTACT_DATA[3]));
 
             TextView tv_email = (TextView) rootView.findViewById(R.id.tv_email);
             tv_email.setText(getString(CONTACT_DATA[4]));
