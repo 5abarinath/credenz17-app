@@ -2,9 +2,9 @@
 <resources>
     <color name="colorPrimary">#3f98b6</color>
     <color name="colorPrimaryDark">#006a86</color>
-    <color name="colorAccent">#75c9e8</color>
+    <color name="colorAccent">#568f9f</color>
     <color name="colorPrimaryLight">#4092a4b7</color>
-    <color name="eventBackground">#f0f0f0</color>
+    <color name="eventBackground">#4025a6a6</color>
 
     <color name="colorE1">#8900495e</color>
     <color name="colorE2">#89335556</color>
@@ -12,8 +12,8 @@
     <color name="colorE4">#7372c985</color>
     <color name="colorE5">#66002744</color>
     <color name="colorE6">#9900495e</color>
-    <color name="colorBackground">#fafafa</color>
-    <color name="homeBackground">#f0f0f0</color>
+    <color name="colorBackground">#4070a9a9</color>
+    <color name="homeBackground">#4025a6a6</color>
     <color name="colorText">#1a1a1a</color>
     <color name="colorLink">#0000ff</color>
     <color name="button_pressed">#ff8a00</color>
