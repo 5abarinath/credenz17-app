@@ -282,11 +282,20 @@ public class fragment_receipts extends Fragment {
                 }
                 else {
                     receiptCount = sharedPref_receiptCount.getInt("count", 0);
-                    receiptCount++;
+                    while(receipt[receiptCount].getVisibility() != View.GONE && receiptCount<=7){
+                        receiptCount++;
+                    }
 
-                    if(receiptCount>7)
-                        receiptCount=0; //TODO: Change replacement algorithm
+                    if(receiptCount>7) {
+                        for(receiptCount=0; receiptCount<=7; receiptCount++){
+                            if(receipt[receiptCount].getVisibility() == View.GONE)
+                                break;
+                            else if(receiptCount==7){
+                                //TODO Dialog Alert
+                            }
+                        }
 
+                    }
                     SharedPreferences.Editor editor = sharedPref_receiptCount.edit();
                     editor.putInt("count", receiptCount);
                     editor.apply();
@@ -325,6 +334,7 @@ public class fragment_receipts extends Fragment {
                 else
                     tv_year[receiptCount].setText("Senior");
 
+                tv_events[receiptCount].setText("");
                 for(int i=0; i<=15; i++){
                     int temp_int = (int)events.charAt(i);
                     if(temp_int!=48)
