@@ -8,7 +8,9 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 /**
  * Created by sabari on 3/7/17.
@@ -17,7 +19,6 @@ import android.widget.ImageButton;
 public class fragment_home extends Fragment {
 
     View view;
-
 
     @Nullable
     @Override
@@ -52,7 +53,25 @@ public class fragment_home extends Fragment {
             }
         });
 
+        Button btn = (Button) view.findViewById(R.id.btn_register);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent meraEvents = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.meraevents.com/event/credenz2017?ucode=organizer"));
+                startActivity(meraEvents);
+            }
+        });
+
+        ImageView imgView = (ImageView) view.findViewById(R.id.imageView);
+        imgView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent website = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.credenz.info"));
+                startActivity(website);
+            }
+        });
         return view;
+
     }
 
     @Override

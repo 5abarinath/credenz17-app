@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     tools:context="com.pisb.credenz17.FeedbackActivity"
-    android:background="@color/colorBackground">
+    android:background="@color/homeBackground">
 
     <ScrollView
         android:layout_width="match_parent"

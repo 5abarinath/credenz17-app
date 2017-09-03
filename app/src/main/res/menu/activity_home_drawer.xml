@@ -15,10 +15,16 @@
             android:id="@+id/nav_ping"
             android:icon="@drawable/newsletter_icon"
             android:title="P.I.N.G."/>
+        <!--<item-->
+            <!--android:id="@+id/nav_map"-->
+            <!--android:icon="@drawable/directions_icon"-->
+            <!--android:title="Roadmap"/>-->
+
         <item
             android:id="@+id/nav_map"
-            android:icon="@drawable/directions_icon"
-            android:title="Roadmap"/>
+            android:icon="@drawable/checkout"
+            android:title="Register Now!"
+            android:visible="false"/>
         <item
             android:id="@+id/nav_receipts"
             android:icon="@drawable/receipt_icon"

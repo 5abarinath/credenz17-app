@@ -203,6 +203,7 @@ public class fragment_receipts extends Fragment {
             alert.show();
         }
 
+        Log.d("TAG", ""+receipt_count);
         for(int i=0; i<=receipt_count; i++) {
             String receipt_name = "receipt" + i;
             sharedPref_receipt = this.getActivity().getSharedPreferences(receipt_name, Context.MODE_PRIVATE);
@@ -255,8 +256,10 @@ public class fragment_receipts extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+        boolean display = true;
+
         if(requestCode == 1) {
-            if(resultCode == Activity.RESULT_OK){
+            if(resultCode == Activity.RESULT_OK) {
                 String name1 = data.getStringExtra("name1");
                 String name2 = data.getStringExtra("name2");
                 String name3 = data.getStringExtra("name3");
@@ -274,73 +277,83 @@ public class fragment_receipts extends Fragment {
                 int receiptCount;
 
                 SharedPreferences sharedPref_receiptCount = this.getActivity().getSharedPreferences(getString(R.string.no_of_receipts), Context.MODE_PRIVATE);
-                if(receipt[0].getVisibility() == View.GONE){
+                if (receipt[0].getVisibility() == View.GONE) {
                     SharedPreferences.Editor editor = sharedPref_receiptCount.edit();
                     editor.putInt("count", 0);
                     editor.apply();
                     receiptCount = 0;
-                }
-                else {
+                } else {
                     receiptCount = sharedPref_receiptCount.getInt("count", 0);
-                    while(receipt[receiptCount].getVisibility() != View.GONE && receiptCount<=7){
+                    while (receiptCount <= 7 && receipt[receiptCount].getVisibility() != View.GONE) {
                         receiptCount++;
                     }
 
-                    if(receiptCount>7) {
-                        for(receiptCount=0; receiptCount<=7; receiptCount++){
-                            if(receipt[receiptCount].getVisibility() == View.GONE)
+                    if (receiptCount > 7) {
+                        for (receiptCount = 0; receiptCount <= 7; receiptCount++) {
+                            if (receipt[receiptCount].getVisibility() == View.GONE)
                                 break;
-                            else if(receiptCount==7){
-                                //TODO Dialog Alert
+                            else if (receiptCount == 7) {
+                                display = false;
+                                new AlertDialog.Builder(getActivity())
+                                        .setTitle("Receipt Limit Exceeded")
+                                        .setMessage("You can only store a maximum of 8 receipts in this app. Please delete a receipt in order to add another one or use the e-receipt sent to your email id.")
+                                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                            public void onClick(DialogInterface dialog, int whichButton) {
+                                            }
+                                        })
+                                        .show();
                             }
                         }
-
+                        if(receiptCount>7)
+                            receiptCount = 7;
                     }
                     SharedPreferences.Editor editor = sharedPref_receiptCount.edit();
                     editor.putInt("count", receiptCount);
                     editor.apply();
                 }
 
-                String receipt_name = "receipt" + receiptCount;
-                sharedPref_receipt = this.getActivity().getSharedPreferences(receipt_name, Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor = sharedPref_receipt.edit();
-                editor.putString("name1",name1);
-                editor.putString("name2",name2);
-                editor.putString("name3",name3);
-                editor.putString("name4",name4);
-                editor.putString("college",college);
-                editor.putString("amount",amount);
-                editor.putString("date",date);
-                editor.putInt("year", year);
-                editor.putString("eventCode", events);
-                editor.putString("regID",regist);
-                editor.putBoolean("deleted", false);
-                editor.apply();
+                if(display){
+                    String receipt_name = "receipt" + receiptCount;
+                    sharedPref_receipt = this.getActivity().getSharedPreferences(receipt_name, Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPref_receipt.edit();
+                    editor.putString("name1", name1);
+                    editor.putString("name2", name2);
+                    editor.putString("name3", name3);
+                    editor.putString("name4", name4);
+                    editor.putString("college", college);
+                    editor.putString("amount", amount);
+                    editor.putString("date", date);
+                    editor.putInt("year", year);
+                    editor.putString("eventCode", events);
+                    editor.putString("regID", regist);
+                    editor.putBoolean("deleted", false);
+                    editor.apply();
 
-                tv_regist[receiptCount].setText(regist);
-                tv_name[receiptCount].setText(name1);
-                if(name2.length() != 0)
-                    tv_name[receiptCount].append("\n"+name2);
-                if(name3.length() != 0)
-                    tv_name[receiptCount].append("\n"+name3);
-                if(name4.length() != 0)
-                    tv_name[receiptCount].append("\n"+name4);
-                tv_college[receiptCount].setText(college);
-                tv_amount[receiptCount].setText("Total Amount: " + amount);
-                tv_date[receiptCount].setText("Date: " + date);
+                    tv_regist[receiptCount].setText(regist);
+                    tv_name[receiptCount].setText(name1);
+                    if (name2.length() != 0)
+                        tv_name[receiptCount].append("\n" + name2);
+                    if (name3.length() != 0)
+                        tv_name[receiptCount].append("\n" + name3);
+                    if (name4.length() != 0)
+                        tv_name[receiptCount].append("\n" + name4);
+                    tv_college[receiptCount].setText(college);
+                    tv_amount[receiptCount].setText("Total Amount: " + amount);
+                    tv_date[receiptCount].setText("Date: " + date);
 
-                if(year==0)
-                    tv_year[receiptCount].setText("Junior");
-                else
-                    tv_year[receiptCount].setText("Senior");
+                    if (year == 0)
+                        tv_year[receiptCount].setText("Junior");
+                    else
+                        tv_year[receiptCount].setText("Senior");
 
-                tv_events[receiptCount].setText("");
-                for(int i=0; i<=15; i++){
-                    int temp_int = (int)events.charAt(i);
-                    if(temp_int!=48)
-                        tv_events[receiptCount].append(eventList[i]+"\n");
+                    tv_events[receiptCount].setText("");
+                    for (int i = 0; i <= 15; i++) {
+                        int temp_int = (int) events.charAt(i);
+                        if (temp_int != 48)
+                            tv_events[receiptCount].append(eventList[i] + "\n");
+                    }
+                    receipt[receiptCount].setVisibility(View.VISIBLE);
                 }
-                receipt[receiptCount].setVisibility(View.VISIBLE);
             }
         }
     }
