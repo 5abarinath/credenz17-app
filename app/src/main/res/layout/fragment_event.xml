@@ -25,7 +25,7 @@
                 app:layout_columnWeight="1"
                 app:layout_gravity="fill_horizontal"
                 app:layout_rowSpan="1"
-                android:layout_marginTop="1dp">
+                android:layout_marginTop="0dp">
                 <!--TODO: Use selectableItemBackgroundBorderless-->
             <ImageButton
                 android:layout_width="match_parent"
@@ -45,10 +45,7 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
-                android:id="@+id/card4"
-                android:layout_marginBottom="0dp"
-                android:layout_marginTop="1dp"
-                android:layout_marginLeft="1dp">
+                android:id="@+id/card4">
 
                 <ImageButton
                     android:layout_width="match_parent"
@@ -72,8 +69,7 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_height="@dimen/card_height_double"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
-                android:id="@+id/card3"
-                android:layout_marginTop="1dp">
+                android:id="@+id/card3">
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -92,9 +88,7 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
-                android:id="@+id/card5"
-                android:layout_marginTop="1dp"
-                android:layout_marginLeft="1dp">
+                android:id="@+id/card5">
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -110,9 +104,6 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/card6"
                 android:layout_height="@dimen/card_height"
-                android:layout_marginBottom="0dp"
-                android:layout_marginTop="1dp"
-                android:layout_marginLeft="1dp"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
                 app:layout_columnSpan="1"
                 app:layout_columnWeight="1"
@@ -134,8 +125,6 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/card7"
                 android:layout_height="@dimen/card_height"
-                android:layout_marginBottom="0dp"
-                android:layout_marginTop="1dp"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
                 app:layout_columnSpan="1"
                 app:layout_columnWeight="1"
@@ -157,9 +146,6 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/card8"
                 android:layout_height="@dimen/card_height"
-                android:layout_marginBottom="0dp"
-                android:layout_marginTop="1dp"
-                android:layout_marginLeft="1dp"
                 android:clickable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
@@ -187,9 +173,7 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
-                android:id="@+id/card14"
-                android:layout_marginTop="1dp"
-                android:layout_marginBottom="0dp">
+                android:id="@+id/card14">
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -208,10 +192,7 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
-                android:id="@+id/card9"
-                android:layout_marginTop="1dp"
-                android:layout_marginLeft="1dp"
-                android:layout_marginBottom="0dp">
+                android:id="@+id/card9">
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -231,8 +212,7 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
-                android:id="@+id/card15"
-                android:layout_marginTop="1dp">
+                android:id="@+id/card15">
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -253,9 +233,7 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_height="@dimen/card_height_double"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
-                android:id="@+id/card10"
-                android:layout_marginTop="1dp"
-                android:layout_marginLeft="1dp">
+                android:id="@+id/card10">
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -277,9 +255,7 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
-                android:id="@+id/card11"
-                android:layout_marginTop="1dp"
-                android:layout_marginBottom="0dp">
+                android:id="@+id/card11">
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -299,9 +275,7 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
-                android:id="@+id/card18"
-                android:layout_marginTop="1dp"
-                android:layout_marginLeft="1dp">
+                android:id="@+id/card18">
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -320,10 +294,8 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorE2"
-                android:id="@+id/card16"
-                android:layout_marginTop="1dp"
-                android:layout_marginLeft="1dp">
-                w<ImageButton
+                android:id="@+id/card16">
+                <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     app:srcCompat="@drawable/seminars"
@@ -342,8 +314,7 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
-                android:id="@+id/card13"
-                android:layout_marginTop="1dp">
+                android:id="@+id/card13">
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -363,9 +334,7 @@
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
                 android:id="@+id/card2"
-                app:layout_gravity="fill_horizontal"
-                android:layout_marginTop="1dp"
-                android:layout_marginLeft="1dp">
+                app:layout_gravity="fill_horizontal">
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -386,8 +355,7 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorPrimaryLight"
-                android:id="@+id/card12"
-                android:layout_marginTop="1dp">
+                android:id="@+id/card12">
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -406,9 +374,7 @@
                 android:foreground="?android:attr/selectableItemBackground"
                 android:layout_height="@dimen/card_height"
                 app:cardBackgroundColor="@color/colorE5"
-                android:id="@+id/card17"
-                android:layout_marginTop="1dp"
-                android:layout_marginLeft="1dp">
+                android:id="@+id/card17">
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

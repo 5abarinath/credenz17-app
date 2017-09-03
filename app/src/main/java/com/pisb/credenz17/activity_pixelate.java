@@ -93,7 +93,7 @@ public class activity_pixelate extends AppCompatActivity {
         public PlaceholderFragment() {  //TODO: Add correct data
             DATA[0] = R.string.pixelate_intro;
             DATA[1] = R.string.pixelate_rules;
-            DATA[2] = R.string.web_question;
+            DATA[2] = R.string.pixelate_question;
             DATA[3] = R.string.pixelate_structure;
             DATA[4] = R.string.pixelate_judging;
         }

@@ -20,4 +20,7 @@
     <color name="button_focused">#ff8a00</color>
     <color name="button_default">#1c76bb</color>
     <color name="button_bg">#00ffffff</color>
+
+    <color name="btn_regist_color">#734fba9a</color>
+    <color name="color_nav_header">#c0d2d1</color>
 </resources>

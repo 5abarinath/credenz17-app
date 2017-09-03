@@ -115,9 +115,13 @@ public class HomeActivity extends AppCompatActivity
             fragmentFlag = true;
             fragment = new fragment_ping();
         } else if (id == R.id.nav_map) {
-            fragmentFlag = false;
-            Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
-            startActivity(intent);
+//            fragmentFlag = false;
+//            Intent intent = new Intent(getApplicationContext(), MapsActivity.class);
+//            startActivity(intent);
+            fragment = new fragment_home();
+            navigationView.setCheckedItem(R.id.nav_home);
+            Intent meraEvents = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.meraevents.com/event/credenz2017?ucode=organizer"));
+            startActivity(meraEvents);
         } else if (id == R.id.nav_receipts) {
             fragmentFlag = true;
             fragment = new fragment_receipts();

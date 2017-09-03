@@ -17,32 +17,55 @@
         <!--android:id="@+id/textView3" />-->
 
     <ImageView
-        android:layout_width="2800dp"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:srcCompat="@drawable/main_logo"
-        android:layout_marginTop="56dp"
         android:id="@+id/imageView"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btn_register"
+        android:clickable="true"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_regist"
+        android:id="@+id/btn_register"
+        android:layout_above="@+id/imageButton1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/register_now_btn"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
 
     <ImageButton
         android:id="@+id/imageButton1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/insta"
         android:background="@color/button_bg"
         android:onClick="instagram"
         android:layout_alignTop="@+id/imageButton2"
         android:layout_toLeftOf="@+id/imageButton2"
-        android:layout_toStartOf="@+id/imageButton2" />
+        android:layout_toStartOf="@+id/imageButton2"
+        android:layout_marginRight="10dp"/>
 
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/fb"
         android:background="@color/button_bg"
         android:onClick="facebook"
@@ -51,19 +74,21 @@
         android:layout_marginBottom="21dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"/>
 
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/twitter"
         android:background="@color/button_bg"
         android:onClick="twitter"
         android:layout_alignTop="@+id/imageButton1"
         android:layout_toLeftOf="@+id/imageButton1"
-        android:layout_toStartOf="@+id/imageButton1" />
+        android:layout_toStartOf="@+id/imageButton1"
+        android:layout_marginRight="10dp"/>
 
 
 </RelativeLayout>

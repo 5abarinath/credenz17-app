@@ -134,7 +134,7 @@ the main event.
 
     <!--Roboliga-->
     <string name="robo_intro">Football- The most breath-taking game becomes even more so when it\'s the robots that play the
-game! Bring your footballer-bot to the game and become a part of the most attractive of the events
+game! Bring your footballer-bot to the game and become a part of the most attractive events
 of Credenz \'17. As an event that surely keeps everyone\'s eyes transfixed on the field, RoboLIGA
 does not fail to entertain and teach at the same time. Explore the Robotics-aspect of Credenz and
 experience the extravagant thrill as you make your bot wade past the opponent and &#8230;that\'s right –
@@ -154,7 +154,7 @@ register at the registration desk on the day of the event, at least an hour prio
 \n- 18 V (Momentary surge on load only) allowed three times in a match.
 \n- The robot cannot split into two independent parts.
 \n- Robot should be manually controlled.
-\n- No weapons (blades, spikes) of any kind are to be attached onto the robot.
+\n- No weapons (blades, spikes) of any kind should be attached onto the robot.
 \n- The participants are allowed to use any number of actuators.
 \n- Max Current 5A.
 \n\n6. There should be no intentional damage done to the other robot by means of attacking wires,
@@ -163,7 +163,7 @@ wheels, motors etc.
 disqualification of the team.
 \n\n8. All the participants should bring receipt and valid I-cards while coming for the contest. No one
 without I-card will be allowed for the contest and the team will be disqualified.
-\n\n9. If any changes are done in the competition pattern they will be uploaded on the website. For any further information keep checking the website.\n\n</string>
+\n\n9. If any changes are done in the competition pattern, they will be uploaded on the website. For any further information keep checking the website.\n\n</string>
     <string name="robo_structure">
 1. The duration of each match will be 8 minutes (i.e. two halves, each of 4 minutes duration). A 30-
 seconds break will be given after half time during which the teams will be allowed to attend to their
@@ -208,7 +208,7 @@ A. Elimination round:
 
     <!--Clash-->
     <string name="clash_intro">A C/C++ coding competition held in high regard for the conceptual challenges it brings to a coder\'s
-mind, \'C\'-LASH beckons all the programmers out there, amateur and experienced alike, to
+mind. \'C\'-LASH beckons all the programmers, amateur and experienced alike to
 participate and enhance their coding skills! Utterly professional yet non-compromising on coding-
 fun, CLASH tests you for your speed, logic and checks if you have the right outlook towards a
 problem. So \'compile\' yourself and join this national-level coding combat in Credenz \'17!\n\n</string>
@@ -242,7 +242,7 @@ crazy ideas.
 \nMAD talks gives you a platform to put forward your ingenious thoughts and let your imagination
 soar. It is a battle of grey cells and wit where insanity is sane.
 \nParticipate and be a part of an astounding event – My Amazing Discovery. Give a presentation on
-what your idea is, why it is out-of-the-box and not easy to implement, yet why you think it is sheer
+what your idea is, why is it out-of-the-box and not easy to implement, yet why you think it is sheer
 brilliance! A platform to prove technology starts with MAD people and their MAD ideas!\n\n</string>
     <string name="mad_structure">1. Proposed concept should be innovative and original.
 \n\n2. A soft copy of your abstract (about 250-300 words) should be mailed to
@@ -274,7 +274,7 @@ be permitted and their team will be disqualified.\n\n</string>
     <!--NTH-->
     <string name="nth_intro">Hook onto Network Treasure Hunt, an online treasure hunt where participants follow clues and visit
 different websites to solve riddles. Solve a series of strategic clues to complete the track and win
-prizes. Decrypt rules, follow the trail and race to the finish to win exciting goodies! This is your
+prizes. Decrypt the clues, follow the trail and race to the finish to win exciting goodies! This is your
 chance to challenge your technical skills. So go on, login and be Sherlock for a day!\n\n</string>
     <string name="nth_rules">1.To start your hunt, go to www.credenz.info
 \n\n2.Register to get your NTH username.
@@ -282,18 +282,18 @@ chance to challenge your technical skills. So go on, login and be Sherlock for a
 \n\n4.To advance, crack the question, and put the answer in the URL:
 \nFROM\nhttp://www.nth.credenz.info/question.php
 \nTO\nhttp://www.nth.credenz.info/answer.php\n\n
-\n\n5. You need to use Google for many of them to solve. Of course, that is where you search for
+\n\n5. You need Google by your side to solve many questions. Of course, that is where you search for
 everything you don\'t know.
 \n\n6. Check the source of the pages, you will get some important clues for hunting further. The titles
 may also give you clues.
 \n\n7. Most importantly, do not forget to have fun!\n\n</string>
-    <string name="nth_structure">1. There will be two Network Treasure Hunts, three and one week respectively before Credenz\'17.\n\n
+    <string name="nth_structure">1. There will be two Network Treasure Hunts, three and one week respectively before Credenz\'17.
 \n\n2. Both the Treasure Hunts are independent. There will be separate winners for both the Treasure
 Hunts.
 \n\n3. It consists of 30 to 50 levels each.
 \n\n4. To go to the next level, you need to crack the present level in any possible way.\n\n</string>
-    <string name="nth_judging">The person who has cracked the highest number of levels wins. In case of a tie, the one who has
-reached first on that level is the winner.\n\n</string>
+    <string name="nth_judging">The person who cracks the highest number of levels wins. In case of a tie, the one who
+reached that level first is the winner.\n\n</string>
 
     <string name="nth_coord1">Mohit Agrawal</string>
     <string name="nth_coord1_contact">+91 9028608363</string>
@@ -306,11 +306,10 @@ reached first on that level is the winner.\n\n</string>
     <string name="pixelate_intro">Plot the pixels of your imagination on the virtual canvas! If you think you can carve your message
 with the fusion of colours, designs, words culminating into an elegant art, here is your chance.
 Integrate your creativity with technology and paint your ideas!\n\n</string>
-    <string name="pixelate_rules">1. A team of maximum two candidates pursuing undergraduate courses are
-allowed per team.
+    <string name="pixelate_rules">1. A team of maximum two members pursuing undergraduate courses is allowed.
 \n\n2. Registration fee is Rs.150 per team for Non-IEEE members and Rs. 120 per
 team for IEEE members.
-\n\n3. Each of the teams should have their own laptops on the day of the event.
+\n\n3. Every team should bring their own laptops on the day of the event.
 \n\n4. All the participants should bring receipt and valid I-cards while coming for the contest. No one
 without I-card will be allowed for the contest and the team will be disqualified.\n\n</string>
     <string name="pixelate_structure">ROUND 1:
@@ -353,7 +352,7 @@ prior to you starting the competition.\n\n</string>
     <string name="pixelate_email">pixelate.credenz17@gmail.com</string>
 
     <!--B-Plan-->
-    <string name="bplan_intro">This event, also known as B-Plan, is an opportunity for all young minds with a spark, who aim to
+    <string name="bplan_intro">This event is an opportunity for young minds who aim to
 become entrepreneurs in the near future, to THINK big and prove it to the world. It will certainly be
 a good opportunity to have discussions with students, just as ambitious as you, and the well-learned
 people who can provide valuable guidance. Come, step forward and present your innovative ideas
@@ -367,7 +366,8 @@ without I-card will be allowed for the contest and the team will be disqualified
     <string name="bplan_structure">1. At stage 1, the soft copy of the abstract (summary) should be submitted to
 bplan.credenz17@gmail.com
 \n\n2. The Soft copy should be a .pdf file.
-\n\n3. Evaluation of Executive Summaries by judges and Short-listing of 7 (+3 waiting) business plans
+\n\n3. Executive Summaries will be evaluated by judges and 7 drafts (+3 waiting) will be shortlisted
+        for the next stage.
 for the next stage takes place.
 \n\n4. Each team will be given 12 minutes in the final round to present their B-PLAN in College
 Auditorium in front of panel of judges and audience. A warning bell will be given at 10 minutes and
@@ -393,11 +393,11 @@ innovative their solution is.
 
 
     <!--Cretronix-->
-    <string name="cretronix_intro">An Electronics based competition which tests the participants\' theoretical and practical knowledge
+    <string name="cretronix_intro">An electronics based competition which tests the participant\'s theoretical and practical knowledge
         (all students from FE to BE.)\n\n</string>
     <string name="cretronix_rules">1. The teams will be shortlisted for the next round based on their scores in the previous round.
 If a tie takes place, the time factor and accuracy will be taken into consideration.
-\n\n2. It will be consisting of two levels-
+\n\n2. The event will be conducted in two levels:
 \nJunior level
 \nSenior level
 \n\n3. I-card and receipt is compulsory.
@@ -419,11 +419,11 @@ build the required circuit.
 \n1st round:
 \nSection 1: Single choice MCQ\'s.
 \nSection 2: Crossword
-\n\n2nd round: HARDWARE/SOFTWARE DEBUGGING
+\n\n2nd round:\nHARDWARE/SOFTWARE DEBUGGING
 \nThe participants will be given a problem statement for which they are supposed to implement the
 solution for HARDWARE/SOFTWARE DEBUGGING. They will also be provided with input-
 output conditions. Participants will have to write a code for SOFTWARES.
-\n\n3rd round: Circuit Designing and implementation
+\n\n3rd round:\nCIRCUIT DESIGN AND IMPLEMENTATION
 \nThe participants will be given a problem statement for which they are supposed to implement the
 solution with the help of hardware/software (Proteus).They will also be provided with input-output
 waveforms for which they have to build the desired circuit.\n\n</string>
@@ -497,7 +497,7 @@ disqualified.
     <string name="contraption_intro">Have you ever wondered how to apply toothpaste on your brush in 20 steps?
         Ever wondered how to light a candle in 30 steps? Contraption is all about complexifying
         the simplest of things you see around yourself. Its whole essence lies in a perfectly
-        balanced mix of innovation, creativity, relevance which results in profound entertainment.\n\n</string>
+        balanced mix of innovation, creativity and relevance which guarantees profound entertainment.\n\n</string>
     <string name="contraption_rules"> 1. A team of max. four members is allowed to participate.
         \n\n2. Registration fees is Rs.200/- per team for Non-IEEE members and Rs.180/- per team for IEEE
         members.
@@ -507,7 +507,7 @@ disqualified.
         \n\n5. Minimum 4 different energy conversion should be implemented in machine. Otherwise team will be disqualified.
         \n\n6. Machine should perform the task in maximum of 4 minutes.
         \n\n7. Machine should not take support of any of four walls and ceiling.
-        \n\n8. Teams have to submit abstract and flowchart in prescribed format well before the deadline for first round.
+        \n\n8. Teams have to submit abstract and flowchart in prescribed format well before the first round.
         \n\n9. Maximum of three trials/chances will be given to any team. For every other chance/trial
         there will be deduction of points.
         \n\n10. For every next chance reset time of 15 mins will be given to team.
@@ -517,9 +517,9 @@ disqualified.
         person inside the arena is uplifted until the machine is ready for the other run.
         \n\n12. That person will explain about the machine and each step going on to judges.
         \n\n13. Each step in the machine should be considered as the transfer of one energy into another.
-        A step is considered to accomplish when there is energy transformation. Example ball coming
-        down from the wedge and hitting the domino is consider a step. In this potential energy of
-        ball gets changed into kinetic energy while coming down and when it hits the domino, it transfers
+        A step is considered to accomplish when there is energy transformation. For example: a ball rolling
+        down a wedge and hitting a domino is consider a step. In this the potential energy of
+        ball is transformed into kinetic energy while coming down and when it hits the domino, it transfers
         its energy to domino.
         \n\n14. Identical transfers of energy in succession should be considered one step. For eg., a set
         of dominos falling into each other should be considered one step. While technically each
@@ -527,21 +527,21 @@ disqualified.
         and against the spirit of Rube Goldberg.
         \n\n15. You can use any material for making of your machine provided in any case , they does not
         lead damage to arena and other machines. Otherwise it will lead to disqualification of team.
-        \n\n16. Hazardous materials are not allowed and any gas or any explosives are also not allowed.
-        However you can use matchstick if required provided it does not damage the arena and any other
+        \n\n16. Use of hazardous materials, gases or explosives is strictly prohibited.
+        However you can use matchstick if required, provided it does not damage the arena and any other
         Machine.
-        \n\n17. We will not provide you any material for making of your Machine. However basic stationary
+        \n\n17. We will not provide you any material for making your Machine. However basic stationary
         materials will be provided to you.
         \n\n18. If required extension boards will be provided to you. But we would really appreciate if
         you bring of your own.
-        \n\n19. Bring 2 copies of abstract when you perform in college.
+        \n\n19. Bring two copies of your abstract on the day of the event.
         \n\n20. No live animal should be used.
         \n\n21. Organizers have the right to change a rule or all if they feel.\n\n
     </string>
     <string name="contraption_structure">
         Round 1
         \n1. Problem statement will be released on the website 15 days prior to the event.
-        \n\n2.Participants have to mail their abstract to email id contraption.credenz17@gmail.com.
+        \n\n2.Participants have to mail their abstract at contraption.credenz17@gmail.com.
         \n\n\nRound 2
         \n1. Best abstracts will be shortlisted from the first round.
         \n\n2. These teams will be allowed to come to college and demonstrate their machine and
@@ -551,14 +551,14 @@ disqualified.
         \n\n1. Design of your machine
     \n\n2. Number of steps involved in it
     \n\n3. Number of different types of energy conversions involved
-    \n\n4. Aesthetic of machine
+    \n\n4. Aesthetic of the machine
     \n\n5. Presentation
     \n\n6. Innovation
-    \n\n7. Will test elementary knowledge of applied physics of team.
+    \n\n7. Elementary knowledge of applied physics will be tested.
     \n\n8. Innovative and team management skills will also be tested.\n\n
 </string>
     <string name="contraption_question">
-        \n\n1. Design a machine of (8*8*8) cubic ft that plays Sa-Re-Ga-Ma-Pa-Dha-Ni-Sa at
+        1. Design a machine of (8*8*8) cubic ft that plays Sa-Re-Ga-Ma-Pa-Dha-Ni-Sa at
         different stages till the final step.
         \n\n2. During execution, your machine should display CREDENZ \'17 at any intermediate state.
         \n\n3. Maximum execution time is 4 minutes.
@@ -585,8 +585,9 @@ disqualified.
         1. A team of maximum three candidates pursuing undergraduate / postgraduate program are allowed.
         \n\n2. Registration fees is Rs.200/- per team for Non-IEEE members and Rs.180/- per team for IEEE
         members.
-        \n\n3. All the participants should bring valid I-cards while coming for the contest. No one
-        without I-card will be allowed for the contest and the team will be disqualified.\n\n
+        \n\n3. All the participants should bring valid I-cards while coming for the contest. Anyone
+        without an I-card will not be allowed to contest and will lead to immediate disqualification
+        of the respective team.\n\n
     </string>
     <string name="paper_structure">
         1. Only soft copy i.e. a .pdf file, of the paper and abstract should be submitted. The paper
@@ -612,12 +613,12 @@ disqualified.
     <!--QUIZ-->
     <string name="quiz_intro">
         There is no measure for intelligence and wisdom. The closest we could reach was by defining
-        an IQ. Fortunately each of us is gifted with this feature. The question is, till what extend
-        we possess it.
+        an IQ. Fortunately each of us is gifted with this feature. The question is, to what extent
+        do we possess it.
         \nDiscover the scope of this feature by Setting out on a voyage through a sea of mind-boggling
         questions captained by a witty quizmaster.\n\nThe Quiz is divided into following three categories held on three different days:
         \n1. General Quiz: It includes everything from robotics to politics. Test your GK!
-        \n2. MELA Quiz: Movies Entertainment Literature and Arts (MELA) is all set to test your knowledge
+        \n2. MELA Quiz: Movies Entertainment Literature and Arts (MELA), is all set to test your knowledge
         of literature, arts and entertainment. If you are an entertainment lover, this is for you!
         \n3. Biz Tech Quiz: If you are passionate about marketing, economics and business, then Biz Tech
         is the ultimate questionnaire you need to answer to test your knowledge.
@@ -626,7 +627,7 @@ disqualified.
     </string>
     <string name="quiz_rules">
         1. A maximum of two candidates pursuing under graduate/graduate program at their institution will be allowed per team.
-        \n\n2. Registration fees is Rs.50/- per team per quiz for Non-IEEE members and Rs.40/- per team per quiz for IEEE
+        \n\n2. Registration fees is Rs.50/- per team, per quiz for Non-IEEE members and Rs.40/- per team per quiz for IEEE
         members.
         \n\n3. Teams can register at desks put up at various colleges in and around Pune. No one without
         I-card will be allowed for the contest and the team will be disqualified. A team has to register
@@ -635,7 +636,7 @@ disqualified.
         \n\n5. All the participants should bring receipt and valid I-cards while coming for the event.\n\n
     </string>
     <string name="quiz_structure">
-        1. There will be two rounds - one elimination rounds and one final round.
+        1. There will be two rounds - one elimination round and one final round.
         \n\n2. Details about structure of quiz will be provided at the time of the event.
         \n\n3. Quiz masters\' decision will be final on all matters.
         \n\n4. Round 1 will be elimination round with no negative marking and round 2 will be conducted by the Quiz Master.\n\n
@@ -657,14 +658,14 @@ disqualified.
 
     <!--Software Development-->
     <string name="softdev_intro">
-        Software Development will be an Application Development Competition, android or desktop with
+        Software Development will be an Application Development Competition, android or desktop, with
         no restriction on the choice of programming language used. You can use ANY existing programming
         language(s) to make your application. The application will be judged by experts in the software
         industry.\n\n
     </string>
     <string name="softdev_rules">
-        1. Maximum of Three people in a team.
-        \n\n2. It will be consisting of two levels-
+        1. Maximum of three people in a team.
+        \n\n2. The competition consists of two levels-
         \nJunior level (For First and Second Year students)
         \nSenior level (For Third and Fourth Year students)
         \n\n3. All the participants should bring receipt and valid I-cards while coming for the contest.
@@ -702,7 +703,7 @@ disqualified.
         \n\n8. Mobile Computing.\n\n
     </string>
     <string name="softdev_judging">
-        Criteria for Judging would consist of multiple parameters:\n\n
+        Criteria for Judging would consist of multiple parameters:
         \n\n1. User Interface
         \n\n2. User friendliness
         \n\n3. Deployment Scenarios
@@ -711,9 +712,9 @@ disqualified.
         \n\n6. Feature Richness
         \n\n7. And a few more.
         \n\nScenario Adaptability: You might be asked to clarify the use of your application in certain
-        scenarios, say What if this software needs to be used in a Library? Or on a Cruiser? Can you
-        elaborate on how that can be accomplished? What if this needs to be deployed in Software
-        Company\'s office? At a manager\'s desk?\n\n
+        scenarios, say "What if this software needs to be used in a Library? Or on a Cruiser?", "Can you
+        elaborate on how that can be accomplished?", "What if this needs to be deployed in Software
+        Company\'s office? At a manager\'s desk?"\n\n
     </string>
 
     <string name="softdev_coord1">Sabarinath S.</string>
@@ -773,4 +774,6 @@ disqualified.
         of modernisation.\n\nWith the imminent Issue 13.1, get ready to be PING\'d!
     </string>
     <string name="pingissueslink"></string>
+
+    <string name="btn_regist">Register</string>
 </resources>
