@@ -91,10 +91,10 @@ public class activity_croodle extends AppCompatActivity {
         private static final int DATA[] = new int[6];
 
         public PlaceholderFragment() {  //TODO: Add correct data
-            DATA[0] = R.string.web_intro;
-            DATA[1] = R.string.web_rules;
-            DATA[2] = R.string.web_structure;
-            DATA[3] = R.string.web_judging;
+            DATA[0] = R.string.croodle_intro;
+            DATA[1] = R.string.croodle_rules;
+            DATA[2] = R.string.croodle_structure;
+            DATA[3] = R.string.croodle_judging;
         }
 
         /**
@@ -114,7 +114,7 @@ public class activity_croodle extends AppCompatActivity {
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_event_data, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText("Will be updated soon!");
+            textView.setText(getString(DATA[getArguments().getInt(ARG_SECTION_NUMBER)] ));
             return rootView;
         }
     }
@@ -127,11 +127,11 @@ public class activity_croodle extends AppCompatActivity {
         private static final int CONTACT_DATA[] = new int[5];
 
         public EventFragment_contact() { //TODO: Add Correct Data
-            CONTACT_DATA[0] = R.string.web_coord1;
-            CONTACT_DATA[1] = R.string.web_coord1_contact;
-            CONTACT_DATA[2] = R.string.web_coord2;
-            CONTACT_DATA[3] = R.string.web_coord2_contact;
-            CONTACT_DATA[4] = R.string.web_email;
+            CONTACT_DATA[0] = R.string.croodle_coord1;
+            CONTACT_DATA[1] = R.string.croodle_coord1_contact;
+            CONTACT_DATA[2] = R.string.croodle_coord2;
+            CONTACT_DATA[3] = R.string.croodle_coord2_contact;
+            CONTACT_DATA[4] = R.string.croodle_email;
         }
 
         @Override
@@ -180,7 +180,7 @@ public class activity_croodle extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 1;
+            return 5;
         }
 
         @Override

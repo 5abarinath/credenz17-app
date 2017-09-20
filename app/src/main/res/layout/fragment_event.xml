@@ -33,7 +33,7 @@
                 android:layout_gravity="center_horizontal"
                 android:background="@color/colorE3"
                 android:clickable="false"
-                android:scaleType="centerInside"
+                android:scaleType="center"
                 app:srcCompat="@drawable/bplan1" />
             </android.support.v7.widget.CardView>
 
@@ -53,7 +53,7 @@
                     android:layout_gravity="center_horizontal"
                     android:background="@color/colorE1"
                     android:clickable="false"
-                    android:scaleType="centerInside"
+                    android:scaleType="center"
                     app:srcCompat="@drawable/contraption2" />
             </android.support.v7.widget.CardView>
 
@@ -76,7 +76,7 @@
                     app:srcCompat="@drawable/clash1"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/colorE4"
-                    android:scaleType="centerInside"
+                    android:scaleType="center"
                     android:clickable="false"/>
             </android.support.v7.widget.CardView>
 
@@ -95,7 +95,7 @@
                     app:srcCompat="@drawable/cretronix1"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/colorE3"
-                    android:scaleType="centerInside"
+                    android:scaleType="center"
                     android:clickable="false"/>
             </android.support.v7.widget.CardView>
 
@@ -117,7 +117,7 @@
                     app:srcCompat="@drawable/croodle1"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/colorE1"
-                    android:scaleType="centerInside"
+                    android:scaleType="center"
                     android:clickable="false"/>
             </android.support.v7.widget.CardView>
 
@@ -139,7 +139,7 @@
                     android:layout_gravity="center_horizontal"
                     android:background="@color/colorE5"
                     android:clickable="false"
-                    android:scaleType="centerInside"
+                    android:scaleType="center"
                     app:srcCompat="@drawable/madtalks1" />
             </android.support.v7.widget.CardView>
 
@@ -159,7 +159,7 @@
                     app:srcCompat="@drawable/nth1"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/colorE2"
-                    android:scaleType="centerInside"
+                    android:scaleType="center"
                     android:clickable="false"/>
             </android.support.v7.widget.CardView>
 
@@ -180,7 +180,7 @@
                     app:srcCompat="@drawable/paper"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/colorE3"
-                    android:scaleType="centerInside"
+                    android:scaleType="center"
                     android:clickable="false"/>
             </android.support.v7.widget.CardView>
 
@@ -199,7 +199,7 @@
                     app:srcCompat="@drawable/pixelate"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/colorE1"
-                    android:scaleType="centerInside"
+                    android:scaleType="center"
                     android:clickable="false"/>
             </android.support.v7.widget.CardView>
 
@@ -219,7 +219,7 @@
                     app:srcCompat="@drawable/roboliga"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/colorE2"
-                    android:scaleType="centerInside"
+                    android:scaleType="center"
                     android:clickable="false"/>
             </android.support.v7.widget.CardView>
 
@@ -240,7 +240,7 @@
                     app:srcCompat="@drawable/quiz"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/colorE4"
-                    android:scaleType="centerInside"
+                    android:scaleType="center"
                     android:clickable="false"/>
             </android.support.v7.widget.CardView>
 
@@ -262,7 +262,7 @@
                     app:srcCompat="@drawable/revb"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/colorE5"
-                    android:scaleType="centerInside"
+                    android:scaleType="center"
                     android:clickable="false"/>
             </android.support.v7.widget.CardView>
 
@@ -282,7 +282,7 @@
                     app:srcCompat="@drawable/sd"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/colorE3"
-                    android:scaleType="centerInside"
+                    android:scaleType="center"
                     android:clickable="false"/>
             </android.support.v7.widget.CardView>
 
@@ -301,7 +301,7 @@
                     app:srcCompat="@drawable/seminars"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/colorE6"
-                    android:scaleType="centerInside"
+                    android:scaleType="center"
                     android:clickable="false"/>
             </android.support.v7.widget.CardView>
 
@@ -321,7 +321,7 @@
                     app:srcCompat="@drawable/web"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/colorE1"
-                    android:scaleType="centerInside"
+                    android:scaleType="center"
                     android:clickable="false"/>
             </android.support.v7.widget.CardView>
 
@@ -341,7 +341,7 @@
                     app:srcCompat="@drawable/stockwhite"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/colorE2"
-                    android:scaleType="centerInside"
+                    android:scaleType="center"
                     android:clickable="false"/>
             </android.support.v7.widget.CardView>
 
@@ -362,7 +362,7 @@
                     app:srcCompat="@drawable/xodia1"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/colorE3"
-                    android:scaleType="centerInside"
+                    android:scaleType="center"
                     android:clickable="false"/>
             </android.support.v7.widget.CardView>
 
@@ -381,7 +381,7 @@
                     app:srcCompat="@drawable/workshop"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/colorE1"
-                    android:scaleType="centerInside"
+                    android:scaleType="center"
                     android:clickable="false"/>
             </android.support.v7.widget.CardView>
 
