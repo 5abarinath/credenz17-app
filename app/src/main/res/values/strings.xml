@@ -603,8 +603,8 @@ disqualified.
         \n\n3. Judge\'s decision will be final and binding on all.\n\n
     </string>
 
-    <string name="paper_coord1">Anshika Agrawal</string>
-    <string name="paper_coord1_contact">+91 9920619918</string>
+    <string name="paper_coord1">Kanika Nadkarni</string>
+    <string name="paper_coord1_contact">+91 7588288081</string>
     <string name="paper_coord2">Viram Shah</string>
     <string name="paper_coord2_contact">+91 9921388069</string>
     <string name="paper_email">paper.credenz17@gmail.com</string>
@@ -759,9 +759,28 @@ disqualified.
     <string name="xodia_email">xodia.credenz17@gmail.com</string>
 
 
+    <!--Croodle-->
+    <string name="croodle_intro">Got some leisure time on your hands? Croodle is the place for you!
+        Croodle is a contest where you can share your doodling skills with the world. It gives your
+        imagination a blank canvas to reveal your imagination by creating your very own CROODLE(Credenz doodle)!
+    </string>
+    <string name="croodle_rules">1. A team of maximum two candidates pursuing undergraduate courses are allowed per team.
+\n\n2. The design can be submitted in any format(JPEG, ONG, GIF etc).
+\n\n3. Any external source or images used should also be included in the documentation.
+\n\n4. The decision of the judges will be final and binding upon all participants.
+\n\n5. Croodle is a free event!</string>
+    <string name="croodle_structure">1. Each team shall design a CROODLE which should be sent to croodle.credenz@gmail.com
+\n\n2. The CROODLE shouls be an image only</string>
+    <string name="croodle_judging">1. Creativity and Originality of design.
+\n\n2. Distinct features incorporated in the design.
+\n\n3. Visual appeal of the design i.e. the efficiency of thecdesign to convey the required message.
+\n\n4. Designing Skills.</string>
 
-
-
+    <string name="croodle_coord1">Motish Mehta</string>
+    <string name="croodle_coord1_contact">+91 9422247762</string>
+    <string name="croodle_coord2">Omkesh Mitkari</string>
+    <string name="croodle_coord2_contact">+91 7776887398</string>
+    <string name="croodle_email">croodle.credenz17@gmail.com</string>
 
 
     <string name="ping_info"><b>PICT IEEE Newsletter Group</b>
